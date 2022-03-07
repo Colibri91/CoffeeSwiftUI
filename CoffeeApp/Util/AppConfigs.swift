@@ -12,7 +12,7 @@ struct Constants {
     static let CONNECTION_TIMEOUT:Double = 120
     static let ActionRowHeigth:Int = 40
     static let PageSize:Int = 20
-    static let ROOT_FOLDER_NAME:String = "Safir"
+    static let ROOT_FOLDER_NAME:String = "Coffee"
     static let ROOT_FOLDER_ID:String = ""
     static let TEMP_FOLDER_NAME:String = "upload"
     static let DEFAULT_COPY_LINK_EXPIRATION_DAY = 30
@@ -20,10 +20,10 @@ struct Constants {
 
 
 
-let BASE_URL     = "https://safirdepo-internet.b3lab.org/rest/api"
-let organization = "org.b3lab.safirdepo-internet"
-let uploadTaskIdentifier      = "org.b3lab.safirdepo-internet.backgroundtask.upload"
-let downloadTaskIdentifier    = "org.b3lab.safirdepo-internet.backgroundtask.download"
+let BASE_URL     = "https://coffee-coffee.b3lab.org/rest/api"
+let organization = "org.b3lab.coffeedepo-internet"
+let uploadTaskIdentifier      = "org.b3lab.coffe-internet.backgroundtask.upload"
+let downloadTaskIdentifier    = "org.b3lab.coffee-internet.backgroundtask.download"
 let uploadIdentifier    = "uploadIdentifier"
 
 struct UserAction {
