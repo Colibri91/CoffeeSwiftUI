@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480D6E5627D5EB92000F1A04 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480D6E5527D5EB92000F1A04 /* ProductListViewModel.swift */; };
+		480D6E5927D5ED63000F1A04 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480D6E5827D5ED63000F1A04 /* BaseViewModel.swift */; };
 		488BF3C42796A6C90074958B /* CoffeeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488BF3C32796A6C90074958B /* CoffeeAppApp.swift */; };
 		488BF3C62796A6C90074958B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488BF3C52796A6C90074958B /* ContentView.swift */; };
 		488BF3C82796A6CC0074958B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488BF3C72796A6CC0074958B /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		480D6E5527D5EB92000F1A04 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		480D6E5827D5ED63000F1A04 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		488BF3C02796A6C90074958B /* CoffeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488BF3C32796A6C90074958B /* CoffeeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAppApp.swift; sourceTree = "<group>"; };
 		488BF3C52796A6C90074958B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480D6E5727D5ED51000F1A04 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				480D6E5827D5ED63000F1A04 /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		488BF3B72796A6C90074958B = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 		488BF3C22796A6C90074958B /* CoffeeApp */ = {
 			isa = PBXGroup;
 			children = (
+				480D6E5727D5ED51000F1A04 /* Base */,
 				488BF4012796B03F0074958B /* Extensions */,
 				488BF3F42796A98D0074958B /* Util */,
 				488BF3EF2796A8270074958B /* Network */,
@@ -212,6 +225,7 @@
 			children = (
 				488BF4092796B7020074958B /* ProductListScreen.swift */,
 				488BF40B2796B7920074958B /* ProductListItem.swift */,
+				480D6E5527D5EB92000F1A04 /* ProductListViewModel.swift */,
 			);
 			path = ProductList;
 			sourceTree = "<group>";
@@ -364,12 +378,14 @@
 				488BF3F12796A8590074958B /* HttpClient.swift in Sources */,
 				488BF3F62796A9A60074958B /* MyLog.swift in Sources */,
 				488BF3FE2796AB4E0074958B /* ErrorCodes.swift in Sources */,
+				480D6E5927D5ED63000F1A04 /* BaseViewModel.swift in Sources */,
 				488BF4032796B0630074958B /* Data+extension.swift in Sources */,
 				488BF4072796B31B0074958B /* SplashScreen.swift in Sources */,
 				488BF40C2796B7920074958B /* ProductListItem.swift in Sources */,
 				488BF40A2796B7020074958B /* ProductListScreen.swift in Sources */,
 				488BF3FA2796AAEA0074958B /* ErrorHandler.swift in Sources */,
 				488BF4122796E9DA0074958B /* ProductDetailScreen.swift in Sources */,
+				480D6E5627D5EB92000F1A04 /* ProductListViewModel.swift in Sources */,
 				488BF3F82796AA2E0074958B /* AppConfigs.swift in Sources */,
 				488BF3C42796A6C90074958B /* CoffeeAppApp.swift in Sources */,
 				488BF3FC2796AB100074958B /* UIError.swift in Sources */,

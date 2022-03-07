@@ -15,13 +15,19 @@ struct ProductListScreen: View {
         NavigationView {
         List {
             ForEach(people, id: \.self) { person in
-                NavigationLink(destination: ProductDetailScreen()) {
+                ZStack{
+                    NavigationLink(destination:
+                            ProductDetailScreen()
+                        ) {
+                            EmptyView()
+                        }
+                        .opacity(0.0)
+                        .buttonStyle(PlainButtonStyle())
                     ProductListItem()
                 }
             }
-        }
-    }.navigationViewStyle(DoubleColumnNavigationViewStyle())
-        .padding()
+        }.listStyle(PlainListStyle())
+    }.navigationBarHidden(true)
     }
 }
 
