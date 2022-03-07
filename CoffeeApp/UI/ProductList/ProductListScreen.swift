@@ -11,10 +11,12 @@ struct ProductListScreen: View {
     
     var people = ["Angela", "Juan", "Yeji","Angela", "Juan", "Yeji","Angela", "Juan", "Yeji"]
     
+    @StateObject private var viewModel:ProductListViewModel =  ProductListViewModel()
+    
     var body: some View {
         NavigationView {
         List {
-            ForEach(people, id: \.self) { person in
+            ForEach(viewModel.coffeeListResponse ?? []) { coffee in
                 ZStack{
                     NavigationLink(destination:
                             ProductDetailScreen()
@@ -23,11 +25,18 @@ struct ProductListScreen: View {
                         }
                         .opacity(0.0)
                         .buttonStyle(PlainButtonStyle())
-                    ProductListItem()
+                    
+                    if viewModel.coffeeListResponse != nil {
+                        ProductListItem(content: coffee)
+                    } else {
+                        EmptyView()
+                    }
                 }
             }
         }.listStyle(PlainListStyle())
-    }.navigationBarHidden(true)
+        }.navigationBarHidden(true).onAppear {
+            viewModel.initialize()
+        }
     }
 }
 
