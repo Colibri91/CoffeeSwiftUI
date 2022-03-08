@@ -8,18 +8,15 @@
 import SwiftUI
 
 struct ProductListScreen: View {
-    
-    var people = ["Angela", "Juan", "Yeji","Angela", "Juan", "Yeji","Angela", "Juan", "Yeji"]
-    
+        
     @StateObject private var viewModel:ProductListViewModel =  ProductListViewModel()
     
     var body: some View {
         NavigationView {
-        List {
-            ForEach(viewModel.coffeeListResponse ?? []) { coffee in
+            List(viewModel.coffeeListResponse ?? []) {coffee in
                 ZStack{
                     NavigationLink(destination:
-                            ProductDetailScreen()
+                            ProductDetailScreen(content: coffee)
                         ) {
                             EmptyView()
                         }
@@ -32,8 +29,7 @@ struct ProductListScreen: View {
                         EmptyView()
                     }
                 }
-            }
-        }.listStyle(PlainListStyle())
+            }.listStyle(PlainListStyle())
         }.navigationBarHidden(true).onAppear {
             viewModel.initialize()
         }

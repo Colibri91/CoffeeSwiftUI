@@ -18,7 +18,7 @@ struct SplashScreen: View {
                        NavigationLink(destination: ProductListScreen(),
                                       isActive: $isActive,
                                       label: { EmptyView() })
-                   }
+                   }.edgesIgnoringSafeArea(.top)
                    .onAppear(perform: {
                        self.gotoLoginScreen(time: 2.5)
                    })
