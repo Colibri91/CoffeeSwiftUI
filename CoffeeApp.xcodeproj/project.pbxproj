@@ -10,6 +10,8 @@
 		480D6E5627D5EB92000F1A04 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480D6E5527D5EB92000F1A04 /* ProductListViewModel.swift */; };
 		480D6E5927D5ED63000F1A04 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480D6E5827D5ED63000F1A04 /* BaseViewModel.swift */; };
 		480D6E5C27D5F840000F1A04 /* CoffeeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480D6E5B27D5F840000F1A04 /* CoffeeListModel.swift */; };
+		480D6E5F27DB6C32000F1A04 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480D6E5E27DB6C32000F1A04 /* Color.xcassets */; };
+		480D6E6127DB6D59000F1A04 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480D6E6027DB6D59000F1A04 /* Colors.swift */; };
 		488BF3C42796A6C90074958B /* CoffeeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488BF3C32796A6C90074958B /* CoffeeAppApp.swift */; };
 		488BF3C62796A6C90074958B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488BF3C52796A6C90074958B /* ContentView.swift */; };
 		488BF3C82796A6CC0074958B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488BF3C72796A6CC0074958B /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		480D6E5527D5EB92000F1A04 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
 		480D6E5827D5ED63000F1A04 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		480D6E5B27D5F840000F1A04 /* CoffeeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListModel.swift; sourceTree = "<group>"; };
+		480D6E5E27DB6C32000F1A04 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		480D6E6027DB6D59000F1A04 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		488BF3C02796A6C90074958B /* CoffeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488BF3C32796A6C90074958B /* CoffeeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAppApp.swift; sourceTree = "<group>"; };
 		488BF3C52796A6C90074958B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 				488BF3CC2796A6CC0074958B /* Info.plist */,
 				488BF3C92796A6CC0074958B /* Preview Content */,
 				488BF3FF2796ABB00074958B /* Extensions.swift */,
+				480D6E5E27DB6C32000F1A04 /* Color.xcassets */,
 			);
 			path = CoffeeApp;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				488BF4022796B0630074958B /* Data+extension.swift */,
+				480D6E6027DB6D59000F1A04 /* Colors.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 			files = (
 				488BF3CB2796A6CC0074958B /* Preview Assets.xcassets in Resources */,
 				488BF3C82796A6CC0074958B /* Assets.xcassets in Resources */,
+				480D6E5F27DB6C32000F1A04 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				488BF3C62796A6C90074958B /* ContentView.swift in Sources */,
+				480D6E6127DB6D59000F1A04 /* Colors.swift in Sources */,
 				480D6E5C27D5F840000F1A04 /* CoffeeListModel.swift in Sources */,
 				488BF4002796ABB00074958B /* Extensions.swift in Sources */,
 				488BF3F12796A8590074958B /* HttpClient.swift in Sources */,
